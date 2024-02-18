@@ -1,0 +1,22 @@
+USE pokemon;
+INSERT INTO pokemon (status, name, image) VALUES 
+(1, 'bulbasaur', '1.svg'),
+(1, 'ivysaur', '2.svg'),
+(1, 'venusaur', '3.svg'),
+(1, 'charmander', '4.svg'),
+(1, 'charmeleon', '5.svg'),
+(1, 'charizard', '6.svg'),
+(1, 'squirtle', '7.svg'),
+(1, 'wartortle', '8.svg'),
+(1, 'blastoise', '9.svg'),
+(1, 'caterpie', '10.svg'),
+(1, 'metapod', '11.svg'),
+(1, 'butterfree', '12.svg'),
+(1, 'weedle', '13.svg'),
+(1, 'kakuna', '14.svg'),
+(1, 'beedrill', '15.svg'),
+(1, 'pidgey', '16.svg'),
+(1, 'pidgeotto', '17.svg'),
+(1, 'pidgeot', '18.svg'),
+(1, 'rattata', '19.svg'),
+(1, 'raticate', '20.svg');
