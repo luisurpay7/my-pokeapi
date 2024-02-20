@@ -11,18 +11,27 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
+import java.util.List;
 
-@RestController()
+@RestController
 @RequestMapping("/api/pokemones")
 public class PokemonController {
+    private final PokemonService pokemonService;
 
     @Autowired
-    private PokemonService pokemonService;
+    public PokemonController(PokemonService pokemonService){
+        this.pokemonService = pokemonService;
+    }
 
     @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping()
-    public ResponseEntity<ArrayList<Pokemon>> getPokemones(){
+    /*public ResponseEntity<ArrayList<Pokemon>> getPokemones(){
         ArrayList<Pokemon> pokemones = this.pokemonService.getPokemones();
+
+        return new ResponseEntity<>(pokemones, HttpStatus.OK);
+    }*/
+    public ResponseEntity<List<Pokemon>> getPokemones(){
+        List<Pokemon> pokemones = this.pokemonService.getPokemones();
 
         return new ResponseEntity<>(pokemones, HttpStatus.OK);
     }

@@ -8,13 +8,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Setter()
-@Getter()
-@NoArgsConstructor()
-@Entity()
+@Setter
+@Getter
+@NoArgsConstructor
+@Entity
 public class Pokemon {
 
-    @Id()
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private int status;
