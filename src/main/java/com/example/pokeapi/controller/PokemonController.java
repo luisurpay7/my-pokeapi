@@ -24,7 +24,7 @@ public class PokemonController {
     }
 
     @CrossOrigin(origins = "http://localhost:4200")
-    @GetMapping()
+    @GetMapping
     /*public ResponseEntity<ArrayList<Pokemon>> getPokemones(){
         ArrayList<Pokemon> pokemones = this.pokemonService.getPokemones();
 
