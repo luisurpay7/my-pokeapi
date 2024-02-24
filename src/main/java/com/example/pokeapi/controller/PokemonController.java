@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/pokemones")
+@RequestMapping("/api/pokemon")
 public class PokemonController {
     private final PokemonService pokemonService;
 
@@ -32,7 +32,6 @@ public class PokemonController {
     }*/
     public ResponseEntity<List<Pokemon>> getPokemones(){
         List<Pokemon> pokemones = this.pokemonService.getPokemones();
-
         return new ResponseEntity<>(pokemones, HttpStatus.OK);
     }
 }
