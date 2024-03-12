@@ -9,4 +9,5 @@ API de pokemones para obtener listado de pokemones con imágenes
     ```
     GET http://localhost:8080/api/pokemon
     GET http://localhost:8080/img/1.svg
+    GET http://localhost:8080/doc/swagger-ui/index.html
     ```
