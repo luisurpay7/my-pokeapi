@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "92dbbe94-714d-4885-bbac-0274742c4e0b",
+		"name": "MyPokeApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19253675"
+	},
+	"item": [
+		{
+			"name": "get Pokemones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/pokemon",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pokemon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/img/1.svg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"img",
+						"1.svg"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

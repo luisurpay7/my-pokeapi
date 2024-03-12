@@ -23,14 +23,10 @@ public class PokemonController {
         this.pokemonService = pokemonService;
     }
 
-    @CrossOrigin(origins = "http://localhost:4200")
+    //@CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = "*")
     @GetMapping
-    /*public ResponseEntity<ArrayList<Pokemon>> getPokemones(){
-        ArrayList<Pokemon> pokemones = this.pokemonService.getPokemones();
-
-        return new ResponseEntity<>(pokemones, HttpStatus.OK);
-    }*/
-    public ResponseEntity<List<Pokemon>> getPokemones(){
+    public ResponseEntity<List<Pokemon>> getPokemones(){    // ResponseEntity<ArrayList<Pokemon>>
         List<Pokemon> pokemones = this.pokemonService.getPokemones();
         return new ResponseEntity<>(pokemones, HttpStatus.OK);
     }
